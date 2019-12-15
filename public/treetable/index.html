@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery treetable</title>
+    <link rel="stylesheet" href="css/screen.css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.treetable.css" />
+    <link rel="stylesheet" href="css/jquery.treetable.theme.default.css" />
+  </head>
+  <body>
+    <div id="main">
+      
+
+      <h3>Basic Expandable Tree</h3>
+
+      <table id="example-basic-expandable">
+        <tr data-tt-id="0">
+          <td>app</td>
+        </tr>
+        <tr data-tt-id="1" data-tt-parent-id="0">
+          <td>controllers</td>
+        </tr>
+        <tr data-tt-id="5" data-tt-parent-id="1">
+          <td>application_controller.rb</td>
+        </tr>
+        <tr data-tt-id="2" data-tt-parent-id="0">
+          <td>helpers</td>
+        </tr>
+        <tr data-tt-id="3" data-tt-parent-id="0">
+          <td>models</td>
+        </tr>
+        <tr data-tt-id="4" data-tt-parent-id="0">
+          <td>views</td>
+        </tr>
+      </table>
+
+     
+      
+
+   
+      <h3>AJAX enabled D&D example</h3>
+
+      <p>See <a href="https://github.com/ludo/jquery-treetable-ajax-example">https://github.com/ludo/jquery-treetable-ajax-example</a>.</p>
+
+      <h3>Using treetable with PersistJS</h3>
+
+      <p>See <a href="https://github.com/jughead/jquery-treetable-ajax-persist">https://github.com/jughead/jquery-treetable-ajax-persist</a>.</p>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery.ui.core.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery.ui.widget.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery.ui.mouse.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery.ui.draggable.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery.ui.droppable.js"></script>
+    <script src="jquery.treetable.js"></script>
+    <script>
+     
+
+      $("#example-basic-expandable").treetable({ expandable: true });
+
+  
+     
+    </script>
+  </body>
+</html>
